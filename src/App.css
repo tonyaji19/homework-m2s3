@@ -1,38 +1,137 @@
-.App {
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body {
+  font-family: poppins, sans-serif;
+  background-color: #874356;
+}
+
+#app {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  font-weight: bold;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#app > h1 > span {
+  color: #C65D7B;
+  margin-left: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.song-pict {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.container-song {
+  display: flex;
+  margin: auto auto 15px auto;
+  padding: 10px 20px 5px 20px;
+  box-shadow: 0px 0px 2px 0px grey;
+  border-radius: 10px;
+  background-color: #616670;
+  justify-content: space-between;
+}
+
+.song-detail {
+  display: inline-block;
+  margin: 0px 10px 0px 10px;
+}
+
+.song-detail > h2 {
+  font-size: 13px;
+  color:whitesmoke;
+  font-weight: 500;
+}
+
+.song-detail > p {
+  font-size: 12px;
+  color:whitesmoke;
+  font-weight: normal;
+}
+
+.container-items {
+  margin: 30px auto auto auto;
+  width: 50%;
+  text-align: left;
+}
+
+.btn-container {
+  margin-top: 10px;
+}
+
+.btn-add {
+  border: none;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 12px 17px 12px 17px;
+  border-radius: 8px;
+  background-color: #F68989;
+  margin: 43px 30px 43px 30px;
+  
+}
+
+.btn-add:hover {
+  border: none;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 12px 17px 12px 17px;
+  border-radius: 8px;
+  background-color: #C65D7B;
+}
+
+.table {
+  margin: 50px auto;
+  width: 80%;
+  text-align: center;
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.table-head {
+  font-size: 18px;
+  
+}
+
+.popularity {
+  padding: 10px;
+  width: 10%;
+}
+
+.table-data {
+  font-size: 16px;
+}
+
+th, td {
+  padding: 10px;
+}
+
+.table-data {
+  font-weight: normal;
+}
+
+.track-img {
+  width: 100px;
+  border-radius: 8px;
+}
+
+.track-name {
+  width: 29%;
 }
